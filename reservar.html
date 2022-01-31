@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Agência de Viagens</h1>
+      <a href="https://agencia-de-viagens.miguelalmeida98.repl.co"><img src="https://static3.depositphotos.com/1004567/221/i/600/depositphotos_2210585-stock-photo-travel.jpg" alt="Logo"></a>
+    </header>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="espanha.html">ESPANHA</a>
+      <a href="italia.html">ITÁLIA</a>
+      <a href="alemanha.html">ALEMANHA</a>
+      <a href="reservar.html">RESERVAS</a>
+    </nav>   
+
+    <div id="form-reservas">
+        <form id="form-reservas-form" name="reservas">
+            <h3>Formulário de reserva:</h3>
+            <div class="form-item">
+                <label>Primeiro nome:</label>
+                <input type="text" id="primeiro-nome" required>
+            </div>
+            <div class="form-item">
+                <label>Último nome:</label>
+                <input type="text" id="ultimo-nome">
+            </div>
+            <div class="form-item">
+                <label>Viagem:</label>
+                <div id="viagens">
+                    <div class="option">
+                        <input type="radio" name="viagem" value="espanha">
+                        <label>Espanha</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="viagem" value="italia">
+                        <label>Itália</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="viagem" value="alemanha">
+                        <label>Alemanha</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>Data da partida:</label>
+                <input type="date" id="data-partida">
+            </div>
+            <!--<div class="form-item">
+                <label>Data da chegada:</label>
+                 Arranjar maneira de atualizar automaticamente a data
+                de chegada consoante a viagem e data de partida e 
+                impedir ou usar outro metodo para impossibilitar o 
+                input da chegada
+                <h4 id="data-chegada">dd/mm/aaaa</h4>
+            </div>-->
+            <div class="form-item">
+                <label>Número de adultos:</label>
+                <input type="number" id="num-adultos">
+            </div>
+            <div class="form-item">
+                <label>Número de crianças:</label>
+                <input type="number" id="num-criancas">
+            </div>
+            <div class="form-item">
+                <label>Classe:</label>
+                <select>
+                    <option>Primeira</option>
+                    <option>Económica</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>Contacto:</label>
+                <input type="tel" id="contacto">
+            </div>
+            <div class="form-item">
+                <label>Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-item">
+                <label>Deixe aqui os seus comentários e questões:</label>
+                <textarea type="text" name="comentario"></textarea>
+            </div>
+            <input class="btn btn-outline-secondary" id="btnform" type="submit" value="Submeter">
+            
+        </form>
+    </div>
+
+    <footer>
+      <p>2022 &copy; Miguel Almeida</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
